@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Bees</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+
+        .hero {
+            background-image: url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .team-member:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0">
+                        <img class="h-20 w-20" src="/download.png" alt="Track Bees Logo">
+                    </a>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                            <a href="#products" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products</a>
+                            <a href="#vision" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Vision</a>
+                            <a href="#team" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Track Bees</h1>
+            <p class="mt-6 text-xl max-w-3xl">Innovating transportation and communication for a better tomorrow.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="products" class="py-12 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-white">Our Products</h2>
+                <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="product-card bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium text-white">MyBus</h3>
+                            <p class="mt-2 text-base text-gray-300">Revolutionizing public transportation.</p>
+                            <a href="https://anubhob435.github.io/trackbeesv1.2/" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium text-white">CalBee</h3>
+                            <p class="mt-2 text-base text-gray-300">Smart Calculator for professionals.</p>
+                            <a href="https://trackbees-calc-2.onrender.com/" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium text-white">BeeChat</h3>
+                            <p class="mt-2 text-base text-gray-300">Secure and efficient AI communication.</p>
+                            <a href="https://gemini-flask-chat-1.onrender.com/" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="py-12 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-white">Our Vision</h2>
+                <p class="mt-4 text-xl text-gray-300">We envision a world where transportation and communication are seamlessly integrated, enhancing the quality of life for everyone. Our innovative solutions aim to create smarter cities, more connected communities, and a sustainable future.</p>
+            </div>
+        </section>
+
+        <section id="team" class="py-12 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-white">Our Team</h2>
+                <div class="mt-10 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+                    <div class="team-member text-center">
+                        <img class="mx-auto h-20 w-20 rounded-full" src="./aniket.jpg" alt="Team member 1">
+                        <div class="mt-2">
+                            <h3 class="text-lg font-medium text-white">Aniket</h3>
+                            <p class="text-sm text-gray-300">CEO</p>
+                        </div>
+                    </div>
+                    <div class="team-member text-center">
+                        <img class="mx-auto h-20 w-20 rounded-full" src="./anubhob.jpg" alt="Team member 2">
+                        <div class="mt-2">
+                            <h3 class="text-lg font-medium text-white">Anubhob</h3>
+                            <p class="text-sm text-gray-300">CTO</p>
+                        </div>
+                    </div>
+                    <div class="team-member text-center">
+                        <img class="mx-auto h-20 w-20 rounded-full" src="./kallol.jpg" alt="Team member 3">
+                        <div class="mt-2">
+                            <h3 class="text-lg font-medium text-white">Kallol</h3>
+                            <p class="text-sm text-gray-300">Lead Developer</p>
+                        </div>
+                    </div>
+                    <div class="team-member text-center">
+                        <img class="mx-auto h-20 w-20 rounded-full" src="./arkadeep.jpg" alt="Team member 4">
+                        <div class="mt-2">
+                            <h3 class="text-lg font-medium text-white">Arkadeep</h3>
+                            <p class="text-sm text-gray-300">UX Designer</p>
+                        </div>
+                    </div>
+                    <div class="team-member text-center">
+                        <img class="mx-auto h-20 w-20 rounded-full" src="./subhojit.jpg" alt="Team member 5">
+                        <div class="mt-2">
+                            <h3 class="text-lg font-medium text-white">Subhojit</h3>
+                            <p class="text-sm text-gray-300">DBA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-base text-gray-400">&copy; 2024 TrackBees. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

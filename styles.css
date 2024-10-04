@@ -1,0 +1,75 @@
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: yellow;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #ffa500; /* Orange color for titles */
+}
+
+#products .product-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #00008B; /* Blue background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+#products .product-links a:hover {
+    transform: scale(1.1);
+}
+
+#team {
+    text-align: center;
+}
+
+#team .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#team .member {
+    text-align: center;
+    color: yellow; /* Yellow text for team members */
+}
+
+#team .member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ffa500; /* Orange border */
+    transition: transform 0.3s;
+}
+
+footer {
+    text-align: center;
+    color: blue;
+    margin-top: 30px;
+}
